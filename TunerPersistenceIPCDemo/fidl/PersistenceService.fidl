@@ -1,0 +1,22 @@
+package commonapi
+  
+interface PersistenceService {
+  version {major 1 minor 0}
+  method store {
+    in {
+      String key
+      String value
+    }
+    out {
+    }
+  }
+  
+  method load {
+    in {
+      String key
+    }
+    out {
+      String value
+    }
+  }  
+} 
